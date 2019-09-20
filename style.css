@@ -1,0 +1,41 @@
+#video {
+	width: 100px;
+	height: 100px;
+}
+
+#loadingStuff {
+	display: none;
+}
+
+#preview {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 720px;
+	height: 510px;
+}
+
+#videoControls {
+	width: 720px;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	top: 480px;
+}
+
+#slider {
+	width: 90%;
+}
+
+#canvas {
+	background: url(transparent.png);
+	background-repeat: repeat;
+	width: 720px;
+	height: 480px;
+}
+
+#upload {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+}

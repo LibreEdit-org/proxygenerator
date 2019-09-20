@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LibreEdit</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<div id="upload">
+		<center>
+			<button onclick="uploadFile(); console.log('Triggering upload')">Upload Video File</button>
+			<br>
+			<span>Downgrade Quality:</span>
+			<select id="quality">
+				<option>Default</option>
+				<option selected="selected">480p</option>
+				<option>240p</option>
+			</select>
+			<br>
+			<span>Video FPS:</span>
+			<input type="number" value="30" id="fps">
+			<br>
+			<div id="loadingStuff">
+				<div id="video">
+					
+				</div>
+				<span id="progresstext">Progress...</span>
+			</div>
+		</center>
+	</div>
+	<br><br>
+	<div id="preview">
+		<canvas id="canvas" onmousemove="playerMouse(event)" onmousedown="mouse.down = true" onmouseup="mouse.down = false" width="720" height="480">
+			
+		</canvas>
+		<br>
+		<div id="videoControls">
+			<button id="play" onclick="play()">Play</button>
+			<input type="range" id="slider">
+		</div>
+	</div>
+</body>
+</html>
